@@ -1,0 +1,5 @@
+title: $:/plugins/oneplaybooklab/dropboxsaver/readme
+
+This is a simple saver for ~TiddlyWiki that allows a user to retrieve, modify and save tiddlers to Dropbox.
+
+Licensed under MPL-2.0

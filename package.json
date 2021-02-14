@@ -1,0 +1,35 @@
+{
+  "name": "dropboxsaver",
+  "version": "0.0.1",
+  "description": "Dropbox Saver for TW5 by OnePlaybook",
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "tid, info, js, css, jpg, png, svg",
+      "quiet": false
+    }
+  },
+  "staticFiles": {
+    "staticPath": "src",
+    "staticOutDir": "dist",
+    "excludeGlob": "**/.+(!(tid)|!(info))"
+  },
+  "scripts": {
+    "watch": "npm-watch",
+    "dev": "npm run watch",
+    "build": "npx parcel build ./src/*.js -d ./dist --no-minify --no-source-maps && bash ./build-wiki.sh"
+  },
+  "author": "abesamma",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "npm-watch": "^0.7.0",
+    "parcel": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.5.0"
+  },
+  "dependencies": {
+    "pouchdb": "^7.2.2",
+    "pouchdb-sync-to-anything": "^0.2.0"
+  }
+}
