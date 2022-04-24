@@ -1,5 +1,5 @@
-title: $:/plugins/oneplaybooklab/dropboxsaver/readme
+title: $:/plugins/oneplaybooklab/local-syncsaver-plugin/readme
 
-This is a simple saver for ~TiddlyWiki that allows a user to retrieve, modify and save tiddlers to Dropbox.
+This is a simple syncadaptor saver for ~TiddlyWiki that allows a user to retrieve, modify and save tiddlers to the local device via PouchDB.
 
 Licensed under MPL-2.0

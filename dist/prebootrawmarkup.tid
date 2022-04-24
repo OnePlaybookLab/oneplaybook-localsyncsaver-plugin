@@ -1,0 +1,42 @@
+title: $:/plugins/oneplaybooklab/local-syncsaver-plugin/prebootrawmarkup
+tags: $:/tags/RawMarkup
+
+<script>
+$tw = window.$tw || Object.create(null);
+$tw.boot = $tw.boot || {};
+$tw.boot.suppressBoot = true;
+$tw.preloadTiddlers = $tw.preloadTiddlers || [];
+const url = new URL(window.location.href);
+const serializedHref = url.href.replaceAll("/", "_");
+const wikiParams = url.searchParams.get('wiki');
+const DATABASE = window.name || wikiParams || serializedHref;
+const db = new PouchDB(DATABASE);
+const deserializedRegex = /(\__)|(\_)/g;
+const deserialize = string => string.replace(deserializedRegex, match => {
+    if (match === "__") return ":/";
+    return "/";
+});
+
+db.allDocs({
+    include_docs: true
+}).then(function (result) {
+    result.rows.forEach(function (item) {
+        const title = deserialize(item.doc.tiddler.fields.title);
+        Array.prototype.push.apply($tw.preloadTiddlers, [{
+            ...item.doc.tiddler.fields,
+            ...{ title, wiki: DATABASE },
+            ...{ created: new Date(item.doc.tiddler.fields.created) },
+            ...{ modified: new Date(item.doc.tiddler.fields.modified) }
+        }]);
+    });
+    Array.prototype.push.apply($tw.preloadTiddlers, [{
+        title: "$:/LocalSyncsaverDatabaseName",
+        text: DATABASE,
+        type: "text/plain"
+    }]);
+}).then(function () {
+    return $tw.boot.boot();
+}).catch(function (err) {
+    return $tw.utils.error("Error: " + err);
+})
+</script>

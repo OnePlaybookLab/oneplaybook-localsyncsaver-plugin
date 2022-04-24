@@ -1,0 +1,65 @@
+title: $:/plugins/oneplaybooklab/local-syncsaver-plugin/icon
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg26"
+   version="1.1"
+   viewBox="0 0 194.27976 194.27976"
+   height="22pt"
+   width="22pt">
+  <defs
+     id="defs20">
+    <linearGradient
+       id="linearGradient34">
+      <stop
+         id="stop30"
+         offset="0"
+         style="stop-color:#fd047b;stop-opacity:1" />
+      <stop
+         style="stop-color:#fd4e64;stop-opacity:1;"
+         offset="0.50583661"
+         id="stop1529" />
+      <stop
+         id="stop32"
+         offset="1"
+         style="stop-color:#fe984e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="272.80951"
+       x2="200.32738"
+       y1="78.529755"
+       x1="6.0476193"
+       id="linearGradient36"
+       xlink:href="#linearGradient34" />
+  </defs>
+  <metadata
+     id="metadata23">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-6.0476193,-78.529755)"
+     id="layer1">
+    <path
+       id="rect28"
+       d="m 58.208329,78.529755 h 89.958331 c 28.89704,0 52.16071,21.577905 52.16071,48.380955 v 97.51784 c 0,26.80305 -23.26367,48.38096 -52.16071,48.38096 H 58.208329 c -28.897033,0 -52.1607097,-21.57791 -52.1607097,-48.38096 v -97.51784 c 0,-26.80305 23.2636767,-48.380955 52.1607097,-48.380955 z"
+       style="opacity:1;fill:url(#linearGradient36);fill-opacity:1;fill-rule:nonzero;stroke-width:0.26458332" />
+    <path
+       style="fill:#ffffff;stroke-width:1.40607154"
+       d="m 103.18752,245.9732 c -10.826753,0 -20.950459,-2.39032 -30.089909,-6.74915 v -23.34077 c 8.43638,6.32731 18.84132,9.9831 30.089909,9.9831 27.69959,0 50.19678,-22.49717 50.19678,-50.19678 0,-27.6996 -22.49719,-50.19673 -50.19678,-50.19673 -3.374618,0 -6.749138,0.28113 -9.983103,0.98426 v 20.80984 c 3.093285,-1.12487 6.467925,-1.68728 9.983103,-1.68728 16.59158,0 30.08986,13.49829 30.08986,30.08991 0,16.59169 -13.49828,30.08997 -30.08986,30.08997 -16.029219,0 -29.246269,-12.65464 -30.089909,-28.40268 v -1.68729 0 c 0,-0.28112 0,-0.56241 0,-0.98425 v -39.22937 c -12.232848,9.13946 -20.106868,23.76261 -20.106868,40.21362 v 49.21253 c -12.37347,-12.65465 -20.10682,-30.08991 -20.10682,-49.21253 0,-28.12139 16.45107,-52.30586 40.213688,-63.5544 6.18662,-2.95276 12.93582,-5.06184 20.106806,-6.04611 3.233965,-0.42196 6.608485,-0.70303 9.983103,-0.70303 38.80752,0 70.30355,31.49597 70.30355,70.30354 0,38.80758 -31.49603,70.3036 -70.30355,70.3036 z m -9.983103,-70.3036 v 0 c 0,5.62433 4.499395,10.12372 9.983103,10.12372 5.62421,0 10.12367,-4.49939 10.12367,-9.9831 0,-5.62427 -4.49946,-9.98308 -10.12367,-9.98308 -5.343098,0 -9.701873,4.21819 -9.983103,9.56129 0,-0.14083 0,0.14083 0,0.28112 z"
+       id="path3751" />
+  </g>
+</svg>

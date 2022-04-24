@@ -1,0 +1,40 @@
+title: $:/plugins/oneplaybooklab/local-syncsaver-plugin/settings
+tags: $:/tags/ControlPanel/Saving
+caption: {{$:/language/ControlPanel/Saving/local-syncsaver-plugin/Oneplaybook/Caption}}
+
+These settings are only used when saving to Local Sync Saver by [[Oneplaybook|https://oneplaybook.app]]
+
+!!! Database name 
+
+''{{$:/LocalSyncsaverDatabaseName}}''
+
+!!! Save filter
+
+<$edit-text tiddler="$:/config/SyncFilter" />
+
+!!! Database contents
+
+<$reveal type="nomatch" state="$:/state/local-syncsaver-plugin/settings" text="show">
+    
+<$button set="$:/state/local-syncsaver-plugin/settings" setTo="show">
+        Show stored tiddlers
+    </$button>
+
+</$reveal>
+<$reveal type="match" state="$:/state/local-syncsaver-plugin/settings" text="show">
+
+<$button set="$:/state/local-syncsaver-plugin/settings" setTo="hide">Hide stored tiddlers</$button>
+
+!!!! Non-system tiddlers
+
+<$set name="wiki-name" value={{$:/LocalSyncsaverDatabaseName}}>
+<<list-links "[!is[system]field:wiki<wiki-name>]">>
+</$set>
+
+!!!! System tiddlers
+
+<$set name="wiki-name" value={{$:/LocalSyncsaverDatabaseName}}>
+<<list-links "[is[system]field:wiki<wiki-name>]">>
+</$set>
+
+</$reveal>

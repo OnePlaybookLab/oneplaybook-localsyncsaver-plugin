@@ -1,7 +1,7 @@
 {
-  "name": "dropboxsaver",
-  "version": "0.0.1",
-  "description": "Dropbox Saver for TW5 by OnePlaybook",
+  "name": "oneplaybook-local-syncsaver-plugin",
+  "version": "0.6.1",
+  "description": "Local SyncSaver for TW5 by OnePlaybook",
   "watch": {
     "build": {
       "patterns": [
@@ -19,17 +19,18 @@
   "scripts": {
     "watch": "npm-watch",
     "dev": "npm run watch",
-    "build": "npx parcel build ./src/*.js -d ./dist --no-minify --no-source-maps && bash ./build-wiki.sh"
+    "build": "npx parcel build ./src/syncadaptor.js -d ./dist --no-minify --no-source-maps && bash ./build-wiki.sh",
+    "clean": "rm ./dist/*"
   },
   "author": "abesamma",
   "license": "MPL-2.0",
   "devDependencies": {
-    "npm-watch": "^0.7.0",
-    "parcel": "^1.12.4",
-    "parcel-plugin-static-files-copy": "^2.5.0"
+    "npm-watch": "^0.11.0",
+    "parcel": "^2.3.2",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-static-files-copy": "^2.6.0"
   },
   "dependencies": {
-    "pouchdb": "^7.2.2",
-    "pouchdb-sync-to-anything": "^0.2.0"
+    "pouchdb": "^7.2.2"
   }
 }

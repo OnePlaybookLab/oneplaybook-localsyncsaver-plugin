@@ -1,11 +1,11 @@
 {
-    "title": "$:/plugins/oneplaybooklab/dropboxsaver",
-    "name": "Dropbox Saver",
-    "description": "Dropbox Saver for TW5 by OnePlaybook",
+    "title": "$:/plugins/oneplaybooklab/local-syncsaver-plugin",
+    "name": "Local Sync Saver",
+    "description": "Local Sync Saver for TW5 by OnePlaybook",
     "author": "abesamma",
-    "version": "0.0.1",
-    "core-version": ">=5.1.22",
-    "list": "readme license",
+    "version": "0.6.1",
+    "core-version": ">=5.1.23",
+    "list": "readme license settings",
     "source": "",
     "plugin-type": "plugin"
 }
